@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/swapActivity"
+        android:icon="@drawable/first"
+        android:title="@null"
+        android:iconTint="@color/pink"/>
+    <item
+        android:id="@+id/allMatchesActivity"
+        android:icon="@drawable/sec"
+        android:title="@null"
+        android:iconTint="@color/pink"/>
+    <item
+        android:id="@+id/messageActivity"
+        android:icon="@drawable/thr"
+        android:title="@null"
+        android:iconTint="@color/pink"/>
+    <item
+        android:id="@+id/userActivity"
+        android:icon="@drawable/fou"
+        android:title="@null"
+        android:iconTint="@color/pink"/>
+</menu>

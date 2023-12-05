@@ -1,0 +1,7 @@
+<resources>
+    <array name="initial_slider_values">
+        <item>18.0</item>
+        <item>70.0</item>
+    </array>
+    <color name="slider_colour">@color/pink</color>
+</resources>

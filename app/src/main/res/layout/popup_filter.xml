@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="30dp">
+
+            <TextView
+                android:id="@+id/filterTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filters"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/black"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="40dp"
+                android:text="Clear"
+                android:layout_centerVertical="true"
+                android:textColor="@color/pink"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/interestTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:text="Interested in"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radiog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/interestTxt"
+            android:layout_marginBottom="39dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="109dp"
+                android:layout_height="58dp"
+                android:background="@drawable/filter_radio_selector_first"
+                android:button="@android:color/transparent"
+                android:checked="true"
+                android:text="Girls"
+                android:textColor="@drawable/text_colour_radio"
+                android:textAlignment="center"
+                android:textSize="14sp"
+                app:buttonCompat="@null" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="109dp"
+                android:layout_height="58dp"
+                android:background="@drawable/second_radio_selector"
+                android:text="Boys"
+                android:button="@color/fui_transparent"
+                android:textColor="@drawable/text_colour_radio"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/rb3"
+                android:layout_width="109dp"
+                android:layout_height="58dp"
+                android:button="@color/fui_transparent"
+                android:textColor="@drawable/text_colour_radio"
+                android:text="Both"
+                android:background="@drawable/third_radio_selector"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+
+        </RadioGroup>
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="59dp"
+            android:layout_marginBottom="12dp"
+            app:boxStrokeColor="#E8E6EA"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:hintTextColor="#555555"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:hint="Location"
+            app:endIconDrawable="@drawable/path"
+            app:endIconTint="@color/pink"
+            app:endIconMode="custom"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            >
+
+
+
+            <TextView
+                android:id="@+id/distanceTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distance"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="40km"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/pink"
+            android:thumb="@drawable/thumb"
+            android:max="100"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            >
+
+        <TextView
+            android:id="@+id/distanceTxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/black"/>
+        </RelativeLayout>
+
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/range_slider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age_txt"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:valueFrom="18.0"
+            android:valueTo="100.0"
+            android:theme="@style/firebaseCustom"
+            app:values="@array/initial_slider_values" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/submitBtn"
+            android:layout_gravity="center"
+            android:layout_below="@+id/seekbar2"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:cardBackgroundColor="#E94057"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="36dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
